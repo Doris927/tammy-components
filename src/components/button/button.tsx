@@ -4,7 +4,7 @@ import classNames from 'classnames'
 export enum ButtonSize {
     Large = 'lg',
     Small = 'sm',
-    Default = 'default',
+    Default = 'none',
 }
 
 export enum ButtonType {

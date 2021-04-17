@@ -60,6 +60,13 @@ SmallButton.args = {
 export const PrimaryButton = Template.bind({})
 PrimaryButton.args = {
     btnType: ButtonType.Primary,
-    children: 'Small Button',
+    children: 'Primary Button',
+    onClick: action('clicked'),
+}
+
+export const DangerButton = Template.bind({})
+DangerButton.args = {
+    btnType: ButtonType.Danger,
+    children: 'Danger Button',
     onClick: action('clicked'),
 }
