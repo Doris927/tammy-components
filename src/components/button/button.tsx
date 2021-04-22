@@ -4,7 +4,6 @@ import classNames from 'classnames'
 export enum ButtonSize {
     Large = 'lg',
     Small = 'sm',
-    Default = 'none',
 }
 
 export enum ButtonType {
@@ -14,10 +13,15 @@ export enum ButtonType {
 }
 
 interface BaseButtonProps {
+    /** クラス名 */
     className?: string
+    /** クリック可能かどうか */
     disabled?: boolean
+    /** サイズ */
     size?: ButtonSize
+    /** タイプ */
     btnType?: ButtonType
+    /** 内容 */
     children?: React.ReactNode
 }
 

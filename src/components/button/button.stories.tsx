@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { Story } from '@storybook/react'
-import Button, { ButtonSize, ButtonType } from './button'
+import Button, { ButtonSize, ButtonType } from './Button'
 import { action } from '@storybook/addon-actions'
 
 //👇 This default export determines where your story goes in the story list
@@ -8,28 +8,6 @@ import { action } from '@storybook/addon-actions'
 export default {
     title: 'Button',
     component: Button,
-    argTypes: {
-        size: {
-            control: {
-                type: 'radio',
-                options: [
-                    ButtonSize.Default,
-                    ButtonSize.Large,
-                    ButtonSize.Small,
-                ],
-            },
-        },
-        btnType: {
-            control: {
-                type: 'radio',
-                options: [
-                    ButtonType.Default,
-                    ButtonType.Primary,
-                    ButtonType.Danger,
-                ],
-            },
-        },
-    },
 }
 
 //👇 We create a “template” of how args map to rendering
